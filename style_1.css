@@ -1,0 +1,242 @@
+/* ------------------------------- */
+/* COLORS */
+/* ------------------------------- */
+
+/* Fire Starter-red #be1e2d */
+/* Cool Down-grey #8a8c8f */
+
+/* Sleek-black/darkbrown #41393d */
+/* Spicy-orange #ef4e22 */
+/* Lucky-beige #d4a18d */
+/* Bamboo-lightgreen #d7e4c2 */
+
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: MajestiBanner;
+    src: url('Majesti-Banner-Medium.otf');
+    font-family: MajestiBannerLight;
+    src: url('Majesti-Banner-Light.otf');
+}
+
+body {
+	font-family: MajestiBannerLight;
+}
+
+
+
+/* ------------------------------- */
+/* HEADER */
+/* ------------------------------- */
+
+
+header {
+	background-image: url("images/town1cover.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.town-heading h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 1000%;
+	letter-spacing: .3em;
+	padding-top: 20px;
+	opacity: 0.7;
+}
+
+.main-nav {
+	list-style: none;
+	text-align: center;
+}
+
+/* SELECTS ALL LI ELEMENTS WITHIN THE MAIN-NAV CLASS */
+.main-nav li {
+	display: inline-block;
+	padding: 30px;
+	margin-top: 20px;
+	letter-spacing: .1em;
+}
+
+/* SELECTS LINK ELEMENTS WITHIN LI ELEMENTS WITHIN MAIN-NAV CLASS */
+.main-nav li a:link,
+.main-nav li a:visited {
+	color: #fff;
+	text-decoration: none;
+/* BASE FONT IS 20PX, 90% OF 20PX EQUALS 18PX RESPONSIVELY */
+/* ----18/20 = 0.9 = 90% ---- */
+	font-size: 120%;
+	border-bottom: 2px solid transparent; /* NEEDS TO EXIST FOR HOVER TO SHOW UP --
+	--- USE TRANSPARENT SO ORANGE WILL SHOW UP LATER */
+	transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+	border-bottom: 2px solid #d7e4c2;
+}
+
+
+/* ------------------------------- */
+/* GRID */
+/* ------------------------------- */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+/* ------------------------------- */
+/* MENU SECTION */
+/* ------------------------------- */
+
+.menu {
+	padding-top: 60px;
+}
+
+.menu-heading h2 {
+	text-align: center;
+	letter-spacing: .1em;
+	font-size: 250%;
+}
+
+
+
+.menu-images img {
+	width: 100%;
+	padding: 50px;
+	opacity: 0.8;
+}
+
+.menu-images {
+	padding-top: 20px;
+}
+
+
+
+.menu-category h3 {
+	color: #ef4e22;
+	font-size: 200%;
+	letter-spacing: .1em;
+	text-align: center;
+}
+
+.menu-category .col-3 {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.main-category {
+	padding-bottom: 20px;
+	padding-top: 50px;
+}
+
+.secondary {
+	padding-bottom: 15px;
+}
+
+.item {
+	text-align: center;
+}
+
+.small {
+	text-align: right;
+}
+
+.large img {
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
+.menu-main {
+	padding-bottom: 50px;
+}
+
+.mural img {
+	width: 100%;
+	opacity: 0.8;
+}
+
+.divider {
+	padding-bottom: 50px;
+}
+
+.about-content img {
+	width: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+	opacity: 0.8;
+}
+
+.about-content p {
+	padding-left: 50px;
+	padding-right: 50px;
+	line-height: 30px;
+	letter-spacing: .1em;
+	text-align: center;
+}
+
+.about {
+	padding-bottom: 50px;
+}
+
+.about-main {
+	padding-bottom: 100px;
+}
+
+
+footer {
+	background-color: #be1e2d;
+	height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
